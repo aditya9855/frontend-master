@@ -58,3 +58,39 @@ async function foo() {
 
 }
 foo();
+
+function foot(){
+  return Promise.resolve(1);
+
+}
+foot();
+
+const p = new Promise((res, rej) => {
+  res(1);
+});
+
+async function asyncReturn() {
+  return p;
+}
+
+function basicReturn() {
+  return Promise.resolve(p);
+}
+
+console.log(p === basicReturn()); // true
+console.log(p === asyncReturn()); // false
+
+
+// async function name(){
+//   await 1;
+
+// }
+// name();
+
+function foo(){
+  return 
+  Promise.resolve(1).then(()=>undefined);
+  
+}
+
+
