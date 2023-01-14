@@ -165,3 +165,18 @@ for (item of buttons) {
 }
 
 
+// document. title represent the title of the page;
+document.title
+// document.body represent the content or elements of the body
+document.body
+
+// document.body.children represent the header  and div like making a tree or all the elements 
+document.body.children //output group of element
+// if two id having same name then js excute the first one 
+
+// document.querySelector("#name");
+// document.getElemntsByTagName("h1");
+
+
+
+
