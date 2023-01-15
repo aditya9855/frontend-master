@@ -176,6 +176,7 @@ document.body.children //output group of element
 
 // document.querySelector("#name");
 // document.getElemntsByTagName("h1");
+document.querySelectorAll("name");
 
 
 
