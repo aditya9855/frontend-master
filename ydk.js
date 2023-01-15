@@ -178,6 +178,6 @@ document.body.children //output group of element
 // document.getElemntsByTagName("h1");
 document.querySelectorAll("name");
 
-
+ 
 
 
