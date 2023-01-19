@@ -181,6 +181,7 @@ document.querySelectorAll("name");
  
 
 
+/// date and time function in javascript
 
 setInterval(myTimer, 1000);
 
@@ -188,5 +189,5 @@ function myTimer() {
   const d = new Date();
   document.getElementById("date").innerHTML = d.toLocaleTimeString();
 }
-// const date = new Date();
-// document.getElementById("date").innerHTML = date;
+const date = new Date();
+document.getElementById("date1").innerHTML = date;
