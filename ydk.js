@@ -137,32 +137,32 @@ class Square extends Rectangle {
 
 
 // calculator code //
-let screen = document.getElementById('screen');
-buttons = document.querySelectorAll('button');
-let screenValue = '';
-for (item of buttons) {
-    item.addEventListener('click', (e) => {
-        buttonText = e.target.innerText;
-        console.log('Button text is ', buttonText);
-        if (buttonText == 'X') {
-            buttonText = '*';
-            screenValue += buttonText;
-            screen.value = screenValue;
-        }
-        else if (buttonText == 'C') {
-            screenValue = "";
-            screen.value = screenValue;
-        }
-        else if (buttonText == '=') {
-            screen.value = eval(screenValue);
-        }
-        else {
-            screenValue += buttonText;
-            screen.value = screenValue;
-        }
+// let screen = document.getElementById('screen');
+// buttons = document.querySelectorAll('button');
+// let screenValue = '';
+// for (item of buttons) {
+//     item.addEventListener('click', (e) => {
+//         buttonText = e.target.innerText;
+//         console.log('Button text is ', buttonText);
+//         if (buttonText == 'X') {
+//             buttonText = '*';
+//             screenValue += buttonText;
+//             screen.value = screenValue;
+//         }
+//         else if (buttonText == 'C') {
+//             screenValue = "";
+//             screen.value = screenValue;
+//         }
+//         else if (buttonText == '=') {
+//             screen.value = eval(screenValue);
+//         }
+//         else {
+//             screenValue += buttonText;
+//             screen.value = screenValue;
+//         }
 
-    })
-}
+//     })
+// }
 
 
 // document. title represent the title of the page;
@@ -191,3 +191,15 @@ function myTimer() {
 }
 const date = new Date();
 document.getElementById("date1").innerHTML = date;
+
+//random number in javascript
+
+Math.random(); // return a random number which is always lower than  1
+
+document.getElementById("random3").onclick = function random(){
+  let hash = Math.floor(Math.random() * 6)+1;
+  document.getElementById("random").innerHTML = hash;
+}
+// random();
+
+
