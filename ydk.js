@@ -203,3 +203,6 @@ document.getElementById("random3").onclick = function random(){
 // random();
 
 
+
+document.getElementById("hd").textContent =  ("the time runnig faster");
+document.getElementById("hd").append("&the time runnig faster");
