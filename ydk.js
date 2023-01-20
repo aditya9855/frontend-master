@@ -166,7 +166,7 @@ class Square extends Rectangle {
 
 
 // document. title represent the title of the page;
-document.title
+document.title = "js practice"
 // document.body represent the content or elements of the body
 document.body
 
@@ -206,3 +206,10 @@ document.getElementById("random3").onclick = function random(){
 
 document.getElementById("hd").textContent =  ("the time runnig faster");
 document.getElementById("hd").append("&the time runnig faster");
+
+// array usefull methods
+
+let array  = ["java","python","c++","javascript"];
+array.sort();
+// output ['c++', 'java', 'javascript', 'python'] array sorted
+
