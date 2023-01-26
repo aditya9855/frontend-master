@@ -219,3 +219,19 @@ array.join(" & ");
 
 array.concat([array1]);
 // output ['java', 'python', 'c++', 'javascript', 'java', 'python', 'c++', 'javascript']
+
+// const counterr = () =>{
+//   let count = 0;
+//   document.getElementById("counter").innerHTML = count++;
+// }
+
+let count = 0;
+function counter(){
+  document.getElementById("counter").innerHTML = count++;
+}
+function resetCounter(){
+  count = 0;
+
+
+  document.getElementById("counter").innerHTML = count;
+}
