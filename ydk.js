@@ -213,3 +213,9 @@ let array  = ["java","python","c++","javascript"];
 array.sort();
 // output ['c++', 'java', 'javascript', 'python'] array sorted
 
+let array1  =  ["java","python","c++","javascript"];
+array.join(" & ");
+//output'java & python & c++ & javascript'
+
+array.concat([array1]);
+// output ['java', 'python', 'c++', 'javascript', 'java', 'python', 'c++', 'javascript']
