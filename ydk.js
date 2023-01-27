@@ -220,18 +220,31 @@ array.join(" & ");
 array.concat([array1]);
 // output ['java', 'python', 'c++', 'javascript', 'java', 'python', 'c++', 'javascript']
 
-// const counterr = () =>{
-//   let count = 0;
-//   document.getElementById("counter").innerHTML = count++;
-// }
-
-let count = 0;
-function counter(){
+const counter = () =>{
   document.getElementById("counter").innerHTML = count++;
 }
+
+let count = 0;
+// function counter(){
+//   document.getElementById("counter").innerHTML = count++;
+// }
 function resetCounter(){
   count = 0;
-
-
   document.getElementById("counter").innerHTML = count;
+}
+
+// .includes property tell us weather specfic term present in the string or not in the boolean term \ if present then true otherwise its return false
+
+"ALOHA".includes("LOL")
+
+"ALOHA".startsWith("AL")// tell about its that string start with al true or false
+
+// to lowercase the string using the js property
+
+"ALOHA".toLowerCase()
+
+function convert(){
+  let line = document.getElementById("convert").value;
+  document.getElementById("lower").innerHTML = line.toLowerCase();
+  
 }
