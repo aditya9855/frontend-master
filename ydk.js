@@ -246,5 +246,42 @@ function resetCounter(){
 function convert(){
   let line = document.getElementById("convert").value;
   document.getElementById("lower").innerHTML = line.toLowerCase();
+
+}
+
+// by using this property we can convert the stirng to uppercase
+function convertUpper(){
+  let line = document.getElementById("converting").value;
+  document.getElementById("upper").innerHTML = line.toUpperCase();
   
 }
+// string are immutable --> data can not be edited 
+//Do these do the same thing?
+let numbers1 = [1, 2, 3];
+let result1 = numbers1.push(4);
+numbers1;
+let numbers2 = [1, 2, 3];
+let result2 = numbers2.concat([4]);
+result2;
+// yes
+const anjana = {
+  name: "Anjana",
+  home: "San Francisco",
+  languages: ["English", "German", "French"],
+  pet: "pitbull",
+  vehicle: "Vespa",
+  hobbies: ["travel", "climbing", "gaming", "lindy hop"]
+  
+  
+};
+
+function showData(){
+  document.getElementById("namie").innerHTML = anjana.name;
+document.getElementById("home").innerHTML = anjana.home;
+document.getElementById("language").innerHTML = anjana.languages;
+document.getElementById("pet").innerHTML = anjana.pet;
+document.getElementById("Vehicle").innerHTML = anjana.vehicle;
+document.getElementById("hobbby").innerHTML = anjana.hobbies;
+
+}
+
